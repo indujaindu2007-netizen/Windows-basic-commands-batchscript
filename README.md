@@ -79,15 +79,16 @@ rm hello1.txt
 List out the file hello1.txt in the current directory
 
 ## COMMAND AND OUTPUT
+ls 
+
+<img width="1790" height="229" alt="image" src="https://github.com/user-attachments/assets/1694909a-2da3-44ae-9e4a-e7e7c65f57d4" />
 
 List out all the associated file extensions 
+## COMMAND AND OUTPUT
 ls hello1.txt
 
 
 <img width="655" height="79" alt="image" src="https://github.com/user-attachments/assets/b2e3535e-fb09-4f3d-968f-8b23f2e2fb3b" />
-
-
-## COMMAND AND OUTPUT
 
 
 Compare the file hello.txt and rose.txt
