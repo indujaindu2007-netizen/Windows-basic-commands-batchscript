@@ -108,6 +108,7 @@ Create a batch file named on the desktop. The batch file need to have a variable
 
 ## OUTPUT
 
+<img width="459" height="171" alt="image" src="https://github.com/user-attachments/assets/db1901bc-ddc0-43bf-9453-c3ad47b116d6" />
 
 
 Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
