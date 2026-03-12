@@ -103,12 +103,19 @@ diff hello.txt Rose.txt
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
 
+```
+@echo off
+set name=Saveetha
+echo Hello, %name%!
+pause
 
+```
 
 
 ## OUTPUT
 
-<img width="459" height="171" alt="image" src="https://github.com/user-attachments/assets/db1901bc-ddc0-43bf-9453-c3ad47b116d6" />
+<img width="405" height="88" alt="image" src="https://github.com/user-attachments/assets/4de0451b-9dc1-4efb-a9ff-27ad52b1c978" />
+
 
 
 Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
@@ -118,20 +125,51 @@ Display whether the number is odd or not.
 Ask the user if they want to check another number.
 Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
 Handle invalid inputs for the continuation prompt (Y/N) gracefully.
+```
+@echo off
+:main
+set /p number=Enter a number: 
+rem Calculate remainder when divided by 2
+set /a remainder=%number% %% 2
+if %remainder%==1 (
+    echo %number% is an odd number.
+) else (
+    echo %number% is not an odd number.
+)
+:choice
+set /p continue=Do you want to check another number? (Y/N): 
+if /i "%continue%"=="Y" goto main
+if /i "%continue%"=="N" goto end
+echo Invalid choice, please enter Y or N.
+goto choice
+:end
+echo Thank you for using the odd number checker!
+pause
 
+```
 
 
 ## OUTPUT
 
+<img width="662" height="206" alt="image" src="https://github.com/user-attachments/assets/6b370ff8-c14b-4438-831e-33f1889997fe" />
 
 
 
 Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
 
+```
+@echo off
+for %%i in (1 2 3 4 5) do (
+    echo Number: %%i
+)
+pause
 
+
+```
 
 
 ## OUTPUT
+<img width="424" height="185" alt="image" src="https://github.com/user-attachments/assets/b1ae3f4f-0b7a-4103-92c2-8b78ad07863e" />
 
 
 
