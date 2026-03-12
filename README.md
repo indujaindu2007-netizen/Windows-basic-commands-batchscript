@@ -190,10 +190,35 @@ Say Hello – Displays the message Hello, World!
 Create a File – Creates a file named newfile.txt with the content This is a new file
 Exit – Exits the script with a goodbye message
 The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
+```
 
+@echo off
+:menu
+echo 1. Say Hello
+echo 2. Create a File
+echo 3. Exit
+set /p choice=Choose an option: 
+if "%choice%"=="1" goto hello
+if "%choice%"=="2" goto createfile
+if "%choice%"=="3" goto end
+
+:hello
+echo Hello, World!
+goto menu
+
+:createfile
+echo Creating a file...
+echo This is a new file > newfile.txt
+goto menu
+:end
+echo Goodbye!
+pause
+
+```
 
 ## OUTPUT
 
+<img width="540" height="421" alt="image" src="https://github.com/user-attachments/assets/5caac316-84f0-425d-80a1-50dd7d6c35cc" />
 
 
 # RESULT:
