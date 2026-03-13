@@ -48,6 +48,7 @@ Create the file Rose.txt
 ## COMMAND AND OUTPUT
 
 type nul > rose.txt
+
 echo Rose flower is beautiful >> rose.txt
 
 <img width="699" height="102" alt="image" src="https://github.com/user-attachments/assets/178bbb09-6389-4fa0-a240-e86b960a2ba4" />
@@ -57,6 +58,7 @@ Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
 echo Hello > hello.txt
+
 type hello.txt
 
 
@@ -66,6 +68,7 @@ Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT
 copy hello.txt hello1.txt
+
 type hello1.txt
 
 <img width="501" height="212" alt="image" src="https://github.com/user-attachments/assets/93a4315d-a01f-4c2c-8c67-0a9d6eb91cdb" />
@@ -101,9 +104,6 @@ Compare the file hello.txt and rose.txt
 fc hello.txt rose.txt
 
 <img width="482" height="262" alt="image" src="https://github.com/user-attachments/assets/842c1211-c9b5-4cdb-bad2-dda72b7dc750" />
-
-
-
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
