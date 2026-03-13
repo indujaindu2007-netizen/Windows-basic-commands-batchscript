@@ -28,7 +28,7 @@ Create a directory named "my-folder"
 mkdir my-folder
 
 
-<img width="788" height="483" alt="image" src="https://github.com/user-attachments/assets/016eda23-c6ed-4506-83fb-993121cd5521" />
+<img width="666" height="394" alt="image" src="https://github.com/user-attachments/assets/8eecd89c-709a-45e7-a14c-dbe5042f0f4a" />
 
 
 Remove the directory "my-folder"
@@ -36,7 +36,8 @@ Remove the directory "my-folder"
 
 ## COMMAND AND OUTPUT
 rmdir my-folder
-<img width="1632" height="256" alt="image" src="https://github.com/user-attachments/assets/d31793c7-8598-4f18-b413-eb816e96b929" />
+<img width="438" height="292" alt="image" src="https://github.com/user-attachments/assets/c4e18b98-ce25-47b5-b684-1aebe45808a3" />
+
 
 
 
@@ -44,60 +45,62 @@ Create the file Rose.txt
 
 ## COMMAND AND OUTPUT
 
-cat > Rose.txt
+type nul > rose.txt
+echo Rose flower is beautiful >> rose.txt
 
+<img width="699" height="102" alt="image" src="https://github.com/user-attachments/assets/178bbb09-6389-4fa0-a240-e86b960a2ba4" />
 
-<img width="474" height="134" alt="image" src="https://github.com/user-attachments/assets/6f1ad386-02ec-4cdb-9f24-7caff473956e" />
 
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
-echo "Hello">hello.txt
-cat hello.txt
+echo Hello > hello.txt
+type hello.txt
 
-<img width="474" height="134" alt="image" src="https://github.com/user-attachments/assets/6edfac79-11f6-4a6d-b2f5-bb11b854059a" />
+
+<img width="497" height="193" alt="image" src="https://github.com/user-attachments/assets/0932c6fe-6cee-4c1a-b6f4-8c2b4424c55b" />
 
 Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT
-cp hello.txt hello1.txt
-cat hello1.txt
+copy hello.txt hello1.txt
+type hello1.txt
 
+<img width="501" height="212" alt="image" src="https://github.com/user-attachments/assets/93a4315d-a01f-4c2c-8c67-0a9d6eb91cdb" />
 
-<img width="474" height="134" alt="image" src="https://github.com/user-attachments/assets/3f5b64b1-5b4f-41c3-9527-e793b85f2019" />
 
 
 Remove the file hello1.txt
 
 ## COMMAND AND OUTPUT
-rm hello1.txt
-<img width="1618" height="338" alt="image" src="https://github.com/user-attachments/assets/d2d34a0a-c68e-4c00-865b-0d74545e7b9e" />
+del hello1.txt
 
-
-
+<img width="508" height="313" alt="image" src="https://github.com/user-attachments/assets/35e8728d-e10f-41c2-81e7-5d8964a1e5b1" />
 
 List out the file hello1.txt in the current directory
 
 ## COMMAND AND OUTPUT
-ls 
+dir hello1.txt
 
-<img width="1790" height="229" alt="image" src="https://github.com/user-attachments/assets/1694909a-2da3-44ae-9e4a-e7e7c65f57d4" />
+<img width="438" height="196" alt="image" src="https://github.com/user-attachments/assets/bc311a07-c89a-4c38-88a2-c568024f6ce1" />
+
 
 List out all the associated file extensions 
 ## COMMAND AND OUTPUT
-ls hello1.txt
+assoc
 
+<img width="452" height="337" alt="image" src="https://github.com/user-attachments/assets/0b72c6d7-58b5-4d7d-a709-14ae16a0d9b8" />
 
-<img width="655" height="79" alt="image" src="https://github.com/user-attachments/assets/b2e3535e-fb09-4f3d-968f-8b23f2e2fb3b" />
 
 
 Compare the file hello.txt and rose.txt
 
 ## COMMAND AND OUTPUT
-diff hello.txt Rose.txt
+fc hello.txt rose.txt
+
+<img width="482" height="262" alt="image" src="https://github.com/user-attachments/assets/842c1211-c9b5-4cdb-bad2-dda72b7dc750" />
 
 
-<img width="612" height="146" alt="image" src="https://github.com/user-attachments/assets/12db069e-1538-44f4-b247-8e238f37bacc" />
 
 
 ## Exercise 2: Advanced Batch Scripting
