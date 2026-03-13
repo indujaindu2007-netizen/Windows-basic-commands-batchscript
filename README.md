@@ -25,6 +25,7 @@ Execute the necessary commands/batch file for the desired output.
 Create a directory named "my-folder"
 
 ## COMMAND AND OUTPUT
+
 mkdir my-folder
 
 
@@ -35,10 +36,11 @@ Remove the directory "my-folder"
 
 
 ## COMMAND AND OUTPUT
+
 rmdir my-folder
+
+
 <img width="438" height="292" alt="image" src="https://github.com/user-attachments/assets/c4e18b98-ce25-47b5-b684-1aebe45808a3" />
-
-
 
 
 Create the file Rose.txt
@@ -184,8 +186,20 @@ Use the IF EXIST conditional statement.
 Make sure the script works for files located in the same directory as the batch file.
 Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
+```
+@echo off
+if exist sample.txt (
+    echo sample.txt exists.
+) else (
+    echo sample.txt does not exist.
+)
+pause
+
+```
 
 ## OUTPUT
+
+<img width="394" height="149" alt="image" src="https://github.com/user-attachments/assets/ac7f6c52-3532-4dce-be01-1fbec70dd388" />
 
 
 Write a batch script that displays a simple menu with three options:
